@@ -10,7 +10,10 @@
                 color: 'blue',
                 doors: '5',
                 hasCT: true,
-                seats: ['seat 1', 'seat 2', 'seat 3', 'seat 4']
+                seats: ['seat 1', 'seat 2', 'seat 3', 'seat 4'],
+                turnOn: function () {
+                    this.hasCT = false;
+                }
 
             }
 

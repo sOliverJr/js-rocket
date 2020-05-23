@@ -1,6 +1,7 @@
 h1{
-    color: drakgrey;
+    color: black;
+    text-align: center;
 }
 body{
-    background-attachment: lightgrey;
+    background-color: lightgrey;
 }

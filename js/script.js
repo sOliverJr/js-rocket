@@ -1,4 +1,9 @@
 console.log('Hello my friends');
+
+function Meldung () {
+    alert('Klappt!');
+}
+
 var car = {
     firm: 'VW',
     type: 'Polo',
@@ -65,5 +70,5 @@ var car = {
     }else {
         alert ('Neiiiiin')
     };
-    
+
  */}

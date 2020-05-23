@@ -1,7 +1,38 @@
-h1{
-    color: black;
+
+
+.center{
     text-align: center;
+    transition: color 1s;
 }
+
+.center.right{
+    text-align: right;
+    color: green;
+}
+
+.test{
+    text-align: left;
+    background-color: red;
+    transition: background-color 1s;
+}
+
+.test.lol{
+    background-color: blue;
+    text-align: center;
+    color:white;
+}
+
+.jap{
+    display: none;
+    transition: display 1s;
+}
+
+.jap.jep{
+    display: block;
+}
+
+
+
 body{
     background-color: lightgrey;
 }

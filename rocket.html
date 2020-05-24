@@ -4,6 +4,8 @@
         <title>Rocket</title>
         <script type="text/javascript" src="js/rocket.js"></script>
         <link rel="stylesheet" type="text/css" href="css/rocket.css">
+        <!-- Passt die Skalierung und den Zoom an -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <!-- Etappe -->
     <body class="x1">
@@ -19,7 +21,7 @@
                 <h1>Start in:</h1>
                 <p id="zahl">10</p>
                 <br>
-                <button class="restart" onclick="wechselSchritt(1)">Abbrechen</button>
+                <button class="restart" id="abort" onclick="wechselSchritt(1)">Abbrechen</button>
             </div>
             <div class="schritt3">
                 <h1>Abflug</h1>

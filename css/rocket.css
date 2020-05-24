@@ -1,6 +1,24 @@
 /* Linkes fenster */
 .panel{
     position: fixed;
+    width: 100%;
+    height: 20%;
+    top: 80%;
+    background-color: #95a5a6;
+}
+
+/* Rechtes Fenster */
+.rocketPad{
+    position: fixed;
+    width: 100%;
+    height: 80%;
+    top: 0px;
+    background-color: #3498db;
+}
+
+/* Linkes fenster
+.panel{
+    position: fixed;
     width: 30%;
     height: 100%;
     left: 0px;
@@ -8,7 +26,7 @@
     background-color: #95a5a6;
 }
 
-/* Rechtes Fenster */
+Rechtes Fenster
 .rocketPad{
     position: fixed;
     width: 70%;
@@ -16,7 +34,7 @@
     right: 0px;
     top: 0px;
     background-color: #3498db;
-}
+} */
 
 /* Rakete */
 .rocket{
@@ -37,6 +55,26 @@
     height: 15px;
     bottom: 0px;
     background-color: #2ecc71;
+}
+
+.panel div{
+    position: absolute;
+    width: 50%;
+    text-align: center;
+    top: 10%;
+    left: 25%;
+}
+
+.panel div h1{
+    font-size: 32px;
+}
+
+.panel div p{
+    font-size: 2em;
+}
+
+.panel div button{
+    font-size: 1em;
 }
 
 /* Verschiedene Etappen */
@@ -67,9 +105,51 @@
 
 /* Je nach Etappe wird der entsprechende Schritt eingeblendet */
 body.x1 .schritt1{display: block;}
+body.x1 .rocket{transition: bottom 0s;}
 body.x2 .schritt2{display: block;}
 body.x3 .schritt3{display: block;}
 body.x3 .rocket {bottom: 150%;}
 body.x4 .schritt4{display: block;}
 body.x4 .rocket {bottom: 150%;}
 body.x5 .schritt5{display: block;}
+
+
+@media only screen and (min-width: 500px){
+
+    .panel{
+        position: fixed;
+        width: 30%;
+        height: 100%;
+        left: 0px;
+        top: 0px;
+        background-color: #95a5a6;
+    }
+    
+    /* Rechtes Fenster */
+    .rocketPad{
+        position: fixed;
+        width: 70%;
+        height: 100%;
+        right: 0px;
+        top: 0px;
+        background-color: #3498db;
+    }
+/* Linkes fenster */
+/* .panel{
+    position: fixed;
+    width: 100%;
+    height: 20%;
+    top: 80%;
+    background-color: #95a5a6;
+}
+
+Rechtes Fenster
+.rocketPad{
+    position: fixed;
+    width: 100%;
+    height: 80%;
+    top: 0px;
+    background-color: #3498db;
+} */
+
+}

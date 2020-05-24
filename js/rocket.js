@@ -1,24 +1,25 @@
 var timer = null;
+var countDownNummer = 10;
 
 // Wechselt zwischen den verschiedenen Schritten: (1)Start Countdown, (4)Countdown, (3)Start Rackete, (4)Erfolg, (5)Verlust.
 var wechselSchritt = function(nummer){
-    var countDownNummer = 10;
     clearInterval(timer);
     document.body.className = 'x'+nummer;
     
-    // Timer auf 0 stellen (geht aber nicht)
+    // Timer auf 0 stellen.
     if (nummer == 1) {
         countDownNummer = 10;
+        document.getElementById('zahl').innerHTML = countDownNummer;
     }
 
-    // Startet den Countdown
+    // Startet den Countdown.
     if (nummer == 2) {
-        // Alle 1000ms den timer um 1 verringern
+        // Alle 1000ms den timer um 1 verringern.
         timer = setInterval(function(){
             countDownNummer = countDownNummer - 1;
             document.getElementById('zahl').innerHTML = countDownNummer;
             
-            // Wenn countdown zu ende ist -> gehe zu Schitt 3
+            // Wenn countdown zu ende ist -> gehe zu Schitt 3.
             if (countDownNummer < 0) {
                 wechselSchritt(3)
             }

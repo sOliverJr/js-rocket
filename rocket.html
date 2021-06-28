@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rocket</title>
+        <script type="text/javascript" src="js/rocket.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/rocket.css">
+        <!-- Passt die Skalierung und den Zoom an -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <!-- Etappe -->
+    <body class="x1">
+        <!-- Linkes fenster -->
+        <div class="panel">
+            <!-- Verschiedene Schritte: (1)Start Countdown, (4)Countdown, (3)Start Rackete, (4)Erfolg, (5)Verlust -->
+            <div class="schritt1">
+                <h1>Interface</h1>
+                <br>
+                <button class="start" onclick="wechselSchritt(2)">Start Countdown</button>
+            </div> 
+            <div class="schritt2">
+                <h1>Start in:</h1>
+                <p id="zahl">10</p>
+                <br>
+                <button class="restart" id="abort" onclick="wechselSchritt(1)">Abbrechen</button>
+            </div>
+            <div class="schritt3">
+                <h1>Abflug</h1>
+            </div>
+            <div class="schritt4">
+                <h1>Erfolg!</h1>
+                <br>
+                <button class="restart" onclick="wechselSchritt(1)">Erneut versuchen</button>
+            </div>
+            <div class="schritt5">
+                <h1>Gescheitert!</h1>
+                <br>
+                <button class="restart" onclick="wechselSchritt(1)">Erneut versuchen</button>
+            </div>
+        </div>
+        <!-- Rechtes Fenster -->
+        <div class="rocketPad">
+            <div class="rocket"></div>
+            <div class="grass"></div>
+        </div>
+    </body>
+
+</html>
